@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Simulador de Carga de Productos</h1>
+
+        <form id="productoForm">
+            <label for="productoNombre">Nombre del producto:</label>
+            <input type="text" id="productoNombre">
+            
+            <label for="productoPrecio">Precio del producto:</label>
+            <select id="precioSeleccionado" onchange="updatePriceInput()">
+              <option value="" disabled selected>Selecciona un precio</option>
+            </select>
+            <input type="text" id="customPrecioInput" placeholder="Ingrese un precio manualmente">
+            
+            <button type="button" onclick="addProduct()">Agregar producto</button>
+          </form>
+          
+          <table id="productosTabla">
+            <div>
+              <th>Nombre</th>
+              <th>Precio</th>
+            </div>
+          </table>
+    </main>
+
+    <script src="./JS/archivo.js"></script>
+</body>
+</html>
